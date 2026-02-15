@@ -1,0 +1,12 @@
+---
+import background from '../assets/background.svg';
+import PromptForm from './Jsx/prompForm.jsx';
+---
+
+<main class="bg-linear-210 flex items-center justify-center" style={`background-image: url('${background.src}'); background-size: cover;`}>
+    <div class="backdrop-blur-3xl min-w-screen min-h-screen flex items-center justify-center flex-col gap-10">
+            <h1 class="text-5xl font-bold ">Dilan AI</h1>
+            <PromptForm client:load/>
+    </div>
+</main>
+
