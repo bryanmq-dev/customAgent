@@ -13,10 +13,6 @@ export default function PromptForm() {
     showProgresiveResponse(res);
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setPrompt(e.target.value);
-  };
-
   const showProgresiveResponse = (fullResponse: string) => {
     const interval = 20;
     let index = 0;
